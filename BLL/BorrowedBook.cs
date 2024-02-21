@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryManagement.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -32,5 +33,9 @@ namespace LibraryManagement.BLL
         public string Code { get => code; set => code = value; }
         public DateTime BorrowedDate { get => borrowedDate; set => borrowedDate = value; }
         public DateTime ReturnedDate { get => returnedDate; set => returnedDate = value; }
+
+        public void BorrowNewBook() => BorrowedBookDB.BorrowBook(this);
+        public static void ReturnNewBook(int id, string code, DateTime returnDate) => BorrowedBookDB.ReturnBook(id,code,returnDate);
+
     }
 }

@@ -19,6 +19,27 @@
         .auto-style4 {
             height: 69px;
         }
+        .auto-style7 {
+            width: 102px;
+            height: 38px;
+        }
+        .auto-style8 {
+            height: 38px;
+        }
+        .auto-style9 {
+            width: 102px;
+            height: 39px;
+        }
+        .auto-style10 {
+            height: 39px;
+        }
+        .auto-style11 {
+            width: 102px;
+            height: 80px;
+        }
+        .auto-style12 {
+            height: 80px;
+        }
     </style>
 </head>
 <body>
@@ -26,29 +47,41 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td>Library Management Login</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td>ID:
-                        <asp:TextBox ID="TextBoxID" runat="server" Width="260px"></asp:TextBox>
+                    <td class="auto-style11">
+                        <h1></h1>
+                    </td>
+                    <td class="auto-style12">
+                        <h1>Library Management </h1>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td>Password:
+                    <td>
+                        <h2><strong>Login</strong></h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>ID: <asp:TextBox ID="TextBoxID" runat="server" Width="260px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style7"></td>
+                    <td class="auto-style8">Password:
                         <asp:TextBox ID="TextBoxPassword" runat="server" Width="260px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style9"></td>
+                    <td class="auto-style10">
+                        <asp:RadioButtonList ID="RadioButtonListUser" runat="server">
+                        </asp:RadioButtonList>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style3"></td>
                     <td class="auto-style4">
-                        <asp:Button ID="ButtonLogin" runat="server" OnClick="ButtonLogin_Click" Text="Login &gt;&gt;" Width="151px" />
+                        <asp:Button ID="ButtonLogin" runat="server" Height="39px" OnClick="ButtonLogin_Click" Text="Login &gt;&gt;" Width="151px" />
                     </td>
                 </tr>
             </table>

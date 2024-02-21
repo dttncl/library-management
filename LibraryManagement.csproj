@@ -68,7 +68,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="GUI\LibrarianDashboard.aspx" />
     <Content Include="GUI\Login.aspx" />
+    <Content Include="GUI\StudentLibrary.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -76,13 +78,31 @@
     <Compile Include="BLL\BorrowedBook.cs" />
     <Compile Include="BLL\Librarian.cs" />
     <Compile Include="BLL\Student.cs" />
+    <Compile Include="DAL\BookDB.cs" />
+    <Compile Include="DAL\BorrowedBookDB.cs" />
+    <Compile Include="DAL\LibrarianDB.cs" />
+    <Compile Include="DAL\StudentDB.cs" />
     <Compile Include="DAL\UtilityDB.cs" />
+    <Compile Include="GUI\LibrarianDashboard.aspx.cs">
+      <DependentUpon>LibrarianDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\LibrarianDashboard.aspx.designer.cs">
+      <DependentUpon>LibrarianDashboard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="GUI\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\StudentLibrary.aspx.cs">
+      <DependentUpon>StudentLibrary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\StudentLibrary.aspx.designer.cs">
+      <DependentUpon>StudentLibrary.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryManagement.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -32,5 +33,7 @@ namespace LibraryManagement.BLL
         public string FirstName { get => firstName; set => firstName = value; }
         public string LastName { get => lastName; set => lastName = value; }
         public string Password { get => password; set => password = value; }
+
+        public static Student Search(int id, string password) => StudentDB.SearchRecord(id, password);
     }
 }
